@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practice</title>
+</head>
+<body>
+    <h1 style="color: blue;">My first bootcamp practice</h1>
+    <p>Lorem ipsum <span>dolor sit</span> amet consectetur adipisicing elit. </p>
+    <h1 style="color: navy;">Survey Form:</h1>
+    <form>
+        <fieldset>
+        <label for="fname" style="color: blue;"><strong>First Name:</strong></label>
+        <input type="text"  id="fname" name="fname"  required><br>
+        <br>
+        <label for="lname" style="color: blue;"><strong>last Name:</strong></label>
+        <input type="text"  id="lname" name="lname"  required><br>
+        <br>
+        <label for="birthday" style="color: blue;"><strong>Birthday:</strong></label>
+        <input type="date" id="birthday" name="birthday"  required><br>
+        <br>
+        <label for="email" style="color: blue;"><strong>Email Id:</strong></label>
+        <input type="text" id="email" name="email"  required><br>
+        <br>
+        <label for="number" style="color: blue;"><strong>Phone number:</strong></label>
+        <input type="tel" id="Phone" name="phone" placeholder="0333-3333444"  required><br>
+        <P style="color: blue;"><strong>Which language you love the most:</strong></P>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javacript" name="fav_language" value="JAVASCRIPT">
+        <label for="javacript">JAVASCRIPT</label><br>
+        <p style="color:blue"><strong>Which browser you like to use on your system:</strong></p>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Internet explorer"></option>
+            <option value="Firefox"></option>      
+            <option value="Mozilla"></option>       
+            <option value="Safari"></option> 
+            <option value="Chrome"></option>   
+
+        </datalist>
+        <p style="color: blue;"><strong>In the following checkboxes which vehicle you have:</strong></p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="car">
+        <label for="vehicle1">I have a Car</label><br>
+        <label for="cars" style="color: blue;"><strong>Choose a car</strong></label>
+        <select id="cars" name="cars">
+            <option value="corolla">Corolla</option>
+            <option value="civic">Civic</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        <br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="cycle">
+        <label for="vehicle2">I have a Cycle</label><br>
+        <label for="quantity" style="color: blue;"><strong>Quantity</strong></label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="1" value="0"><br>
+        <br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+        <label for="vehicle3">I have a Bike</label><br>
+        <label for="range" style="color: blue;"> <strong>How many bikes you have:</strong></label>
+        <input type="number" id="range" name="range" min="0" max="10">
+        <br>
+        <input type="submit" onclick="alert('Form is submitted sucessfully')" value="submit">
+    </fieldset>
+    </form>
+</body>
+</html>
